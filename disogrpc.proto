@@ -3,7 +3,7 @@ syntax = "proto3";
 package disogrpc;
 
 // The handshake service definition.
-service HanShake {
+service HandShake {
   // Sends a greeting
   rpc performHandShake (HandShakeInit) returns (HandShakeReply) {}
 }

@@ -15,7 +15,7 @@ using disogrpc::HandShakeReply;
 
 class HandShakeClient {
     public:
-        HandShakeClient(std::shared_ptr<Channel> channel) : stub_(Greeter::NewStub(channel)) {}
+        HandShakeClient(std::shared_ptr<Channel> channel) : stub_(HandShake::NewStub(channel)) {}
 
         // Assembles the client's payload, sends it and presents the response back
         // from the server.
