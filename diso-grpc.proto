@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package disogrpc;
+
+// The handshake service definition.
+service HanShake {
+  // Sends a greeting
+  rpc performHandShake (HandShakeInit) returns (HandShakeReply) {}
+}
+
+// The request message containing the user's name.
+message HandShakeInit {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message HandShakeReply {
+  string message = 1;
+}
