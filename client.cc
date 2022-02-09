@@ -83,7 +83,7 @@ int main(int argc, char** argv) {
     HandShakeClient hs(grpc::CreateChannel(target_str, grpc::InsecureChannelCredentials()));
     std::string user("DISO HandShake Client");
     std::string reply = hs.performHandShake(user);
-    std::cout << "HandShake message received : " << reply << std::endl;
+    std::cout << "\033[1;35mHandShake message received : " << reply << "\033[0m" << std::endl;
 
     return 0;
 }
