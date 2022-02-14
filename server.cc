@@ -22,6 +22,7 @@ class HandShakeImpl final : public HandShake::Service {
     {
         std::string prefix("HandShake init from ");
         reply->set_message(prefix + request->name());
+        std::cout << "\033[1;35mHandShake TEST" << "\033[0m" << std::endl;
         return Status::OK;
     }
 };
